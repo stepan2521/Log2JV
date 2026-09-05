@@ -1,4 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: Log2JV - Logger for Java
-Implementation-Version: 0.6.1
-
