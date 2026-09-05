@@ -94,7 +94,7 @@ Gradle (local file — the simplest way to start):
 
 ```kotlin
 dependencies {
-    implementation(files("libs/log2jv-0.1.0.jar"))
+    implementation(files("libs/log2jv-0.6.1.jar"))
 }
 ```
 
@@ -104,9 +104,9 @@ Maven:
 <dependency>
     <groupId>io.log2jv</groupId>
     <artifactId>log2jv</artifactId>
-    <version>0.1.0</version>
+    <version>0.6.1</version>
     <scope>system</scope>
-    <systemPath>${project.basedir}/libs/log2jv-0.1.0.jar</systemPath>
+    <systemPath>${project.basedir}/libs/log2jv-0.6.1.jar</systemPath>
 </dependency>
 ```
 
@@ -204,36 +204,4 @@ console.colors=false
 
 ## Changelog
 
-### 0.1.0
-The **Log2JV** library was just released! There are warns, errors, info and more.
-Unfortunately we did not save the progress that was made.
-
-### 0.2.0
-Remade the logging, added colors.
-
-### 0.3.0
-Now you can click on the `Class:line` in a log message to jump to that line!
-(This may not work in some IDEs.)
-
-### 0.4.0
-Output is now UTF-8, so more languages are supported.
-
-### 0.4.1
-Updated the Demo file and added the changelog to README.md.
-
-### 0.5.0
-Replaced the old `%s` / `%d` / `%f` / ... message placeholders with the clearer
-`${}` syntax. Literal dollar signs are written as `$$`. All documentation and
-Javadoc translated to English.
-
-### 0.6.0
-- Added **FATAL** logging level and corresponding `fatal(...)` methods
-  (severity above ERROR). FATAL messages are written to stderr and coloured
-  in bold magenta.
-- Fixed parsing of `$${}` sequences (literal `$` + placeholder).
-- Expanded Demo with more examples and a try/catch demonstration.
-
-### 0.6.1
-- **FATAL now terminates the application**: after the message is written,
-an unchecked exception is thrown (the original throwable is rethrown when
-provided).
+Changelog is moved to [Releases](https://github.com/stepanmail1999-ctrl/Log2JV/releases)
