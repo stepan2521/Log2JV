@@ -4,7 +4,7 @@ Simple, zero-dependency Java logging library inspired by the log4j2 architecture
 (levels, appenders, formatters, file-based configuration, asynchronous writing,
 file rotation).
 
-## JDK Compatibility
+## JDK Compatibility 
 
 The library is compiled with the `--release 11` flag (see `build.gradle.kts`).
 This means:
