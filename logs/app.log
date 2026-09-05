@@ -1,0 +1,68 @@
+2026-09-05 13:22:22.332 [TRACE] io.log2jv.Demo - Это TRACE — скорее всего не будет видно при уровне INFO
+2026-09-05 13:22:22.338 [DEBUG] io.log2jv.Demo - Это DEBUG — тоже отфильтруется на уровне INFO
+2026-09-05 13:22:22.387 [INFO] io.log2jv.Demo - Приложение Log2JV запущено на JDK 11.0000
+2026-09-05 13:22:22.389 [WARN] io.log2jv.Demo - Свободного места на диске меньше 10.0000%
+2026-09-05 13:22:22.389 [ERROR] io.log2jv.Demo - Не удалось выполнить деление
+java.lang.ArithmeticException: / by zero
+	at io.log2jv.Demo.main(Demo.java:19)
+
+2026-09-05 13:22:22.695 [INFO] io.log2jv.Demo - Массив: [0, 5, 2, 4, 6]; параметр: Name: 5
+2026-09-05 13:28:07.403 [DEBUG] io.log2jv.Demo - Hello!
+2026-09-05 13:56:48.441 [INFO] io.log2jv.Demo - Hello!
+2026-09-05 13:56:48.442 [INFO] io.log2jv.Demo - Demo exception: %s
+2026-09-05 13:57:18.226 [INFO] io.log2jv.Demo - Hello!
+2026-09-05 13:59:22.377 [INFO] io.log2jv.Demo - Hello!
+2026-09-05 13:59:22.417 [ERROR] io.log2jv.Demo - Caught an exception: java.lang.IllegalArgumentException: Too few arguments for Logger.log - expected 2, but got 1
+2026-09-05 15:47:37.128 [INFO] io.log2jv.Demo - Demo Info
+2026-09-05 15:47:37.160 [INFO] io.log2jv.Demo - Hello from Log2JV!
+2026-09-05 16:04:59.026 [INFO] io.log2jv.Demo - Demo Info
+2026-09-05 16:04:59.031 [INFO] io.log2jv.Demo - Hello from Log2JV!
+2026-09-05 16:04:59.031 [INFO] io.log2jv.Demo - Cost is $5 dollars
+2026-09-05 16:04:59.032 [ERROR] io.log2jv.Demo - Demo Error
+2026-09-05 16:04:59.032 [ERROR] io.log2jv.Demo - Something went wrong with code 42
+2026-09-05 16:04:59.032 [FATAL] io.log2jv.Demo - Demo Fatal
+2026-09-05 16:04:59.032 [FATAL] io.log2jv.Demo - Critical failure in module core
+2026-09-05 16:04:59.033 [DEBUG] io.log2jv.Demo - Demo Debug
+2026-09-05 16:04:59.033 [DEBUG] io.log2jv.Demo - User id = 1001, session = abc-xyz
+2026-09-05 16:04:59.033 [TRACE] io.log2jv.Demo - Demo Trace
+2026-09-05 16:04:59.033 [WARN] io.log2jv.Demo - Demo Warn
+2026-09-05 16:04:59.034 [WARN] io.log2jv.Demo - Disk usage is at 92%
+2026-09-05 16:04:59.034 [INFO] io.log2jv.Demo - Array: [10, 20, 30]
+2026-09-05 16:04:59.048 [INFO] io.log2jv.Demo - Pair: timeout: 5000
+2026-09-05 16:04:59.049 [INFO] io.log2jv.Demo - Nested: [[a, b], [c, d]]
+2026-09-05 16:04:59.049 [INFO] io.log2jv.Demo - Just a dollar sign: $$
+2026-09-05 16:04:59.050 [INFO] io.log2jv.Demo - Price tag: $19$
+2026-09-05 16:04:59.062 [ERROR] io.log2jv.Demo - Caught an exception while formatting
+java.lang.IllegalArgumentException: Too few arguments for Logger.log - expected 2, but got 1
+	at io.log2jv.MessageFormatter.format(MessageFormatter.java:62)
+	at io.log2jv.LoggerImpl.logFormatted(LoggerImpl.java:42)
+	at io.log2jv.LoggerImpl.info(LoggerImpl.java:25)
+	at io.log2jv.Demo.TryCatchTest(Demo.java:88)
+	at io.log2jv.Demo.Launch(Demo.java:23)
+	at io.log2jv.Demo.main(Demo.java:12)
+
+2026-09-05 16:27:09.858 [INFO] io.log2jv.Demo - Demo Info
+2026-09-05 16:27:09.866 [INFO] io.log2jv.Demo - Hello from Log2JV!
+2026-09-05 16:27:09.867 [INFO] io.log2jv.Demo - Cost is $5 dollars
+2026-09-05 16:27:09.868 [ERROR] io.log2jv.Demo - Demo Error
+2026-09-05 16:27:09.868 [ERROR] io.log2jv.Demo - Something went wrong with code 42
+2026-09-05 16:27:09.869 [DEBUG] io.log2jv.Demo - Demo Debug
+2026-09-05 16:27:09.869 [DEBUG] io.log2jv.Demo - User id = 1001, session = abc-xyz
+2026-09-05 16:27:09.869 [TRACE] io.log2jv.Demo - Demo Trace
+2026-09-05 16:27:09.869 [WARN] io.log2jv.Demo - Demo Warn
+2026-09-05 16:27:09.870 [WARN] io.log2jv.Demo - Disk usage is at 92%
+2026-09-05 16:27:09.870 [INFO] io.log2jv.Demo - Array: [10, 20, 30]
+2026-09-05 16:27:09.902 [INFO] io.log2jv.Demo - Pair: timeout: 5000
+2026-09-05 16:27:09.903 [INFO] io.log2jv.Demo - Nested: [[a, b], [c, d]]
+2026-09-05 16:27:09.903 [INFO] io.log2jv.Demo - Just a dollar sign: $$
+2026-09-05 16:27:09.903 [INFO] io.log2jv.Demo - Price tag: $19$
+2026-09-05 16:27:09.911 [ERROR] io.log2jv.Demo - Caught an exception while formatting
+java.lang.IllegalArgumentException: Too few arguments for Logger.log - expected 2, but got 1
+	at io.log2jv.MessageFormatter.format(MessageFormatter.java:62)
+	at io.log2jv.LoggerImpl.logFormatted(LoggerImpl.java:63)
+	at io.log2jv.LoggerImpl.info(LoggerImpl.java:25)
+	at io.log2jv.Demo.TryCatchTest(Demo.java:91)
+	at io.log2jv.Demo.Launch(Demo.java:22)
+	at io.log2jv.Demo.main(Demo.java:12)
+
+2026-09-05 16:27:09.914 [FATAL] io.log2jv.Demo - Demo Fatal — this will crash the program

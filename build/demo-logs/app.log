@@ -1,0 +1,43 @@
+2026-09-05 11:22:37.090 [DEBUG] io.log2jv.Demo - Это DEBUG — тоже отфильтруется на уровне INFO
+2026-09-05 11:22:37.124 [INFO] io.log2jv.Demo - Приложение Log2JV запущено на JDK 11.0000
+2026-09-05 11:22:37.125 [WARN] io.log2jv.Demo - Свободного места на диске меньше 10.0000%
+2026-09-05 11:22:37.125 [ERROR] io.log2jv.Demo - Не удалось выполнить деление
+java.lang.ArithmeticException: / by zero
+	at io.log2jv.Demo.main(Demo.java:19)
+
+2026-09-05 11:22:37.430 [INFO] io.log2jv.Demo - Массив: [0, 5, 2, 4, 6]; параметр: Name: 5
+2026-09-05 12:37:24.448 [DEBUG] io.log2jv.Demo - Это DEBUG — тоже отфильтруется на уровне INFO
+2026-09-05 12:37:24.617 [INFO] io.log2jv.Demo - Приложение Log2JV запущено на JDK 11.0000
+2026-09-05 12:37:24.618 [WARN] io.log2jv.Demo - Свободного места на диске меньше 10.0000%
+2026-09-05 12:37:24.619 [ERROR] io.log2jv.Demo - Не удалось выполнить деление
+java.lang.ArithmeticException: / by zero
+	at io.log2jv.Demo.main(Demo.java:19)
+
+2026-09-05 12:37:24.964 [INFO] io.log2jv.Demo - Массив: [0, 5, 2, 4, 6]; параметр: Name: 5
+2026-09-05 12:48:14.903 [TRACE] io.log2jv.Demo - Это TRACE — скорее всего не будет видно при уровне INFO
+2026-09-05 12:48:14.904 [DEBUG] io.log2jv.Demo - Это DEBUG — тоже отфильтруется на уровне INFO
+2026-09-05 12:48:14.958 [INFO] io.log2jv.Demo - Приложение Log2JV запущено на JDK 11.0000
+2026-09-05 12:48:14.959 [WARN] io.log2jv.Demo - Свободного места на диске меньше 10.0000%
+2026-09-05 12:48:14.960 [ERROR] io.log2jv.Demo - Не удалось выполнить деление
+java.lang.ArithmeticException: / by zero
+	at io.log2jv.Demo.main(Demo.java:19)
+
+2026-09-05 12:48:15.274 [INFO] io.log2jv.Demo - Массив: [0, 5, 2, 4, 6]; параметр: Name: 5
+2026-09-05 12:50:57.507 [TRACE] io.log2jv.Demo - Это TRACE — скорее всего не будет видно при уровне INFO
+2026-09-05 12:50:57.507 [DEBUG] io.log2jv.Demo - Это DEBUG — тоже отфильтруется на уровне INFO
+2026-09-05 12:50:57.583 [INFO] io.log2jv.Demo - Приложение Log2JV запущено на JDK 11.0000
+2026-09-05 12:50:57.584 [WARN] io.log2jv.Demo - Свободного места на диске меньше 10.0000%
+2026-09-05 12:50:57.585 [ERROR] io.log2jv.Demo - Не удалось выполнить деление
+java.lang.ArithmeticException: / by zero
+	at io.log2jv.Demo.main(Demo.java:19)
+
+2026-09-05 12:50:57.890 [INFO] io.log2jv.Demo - Массив: [0, 5, 2, 4, 6]; параметр: Name: 5
+2026-09-05 13:13:20.453 [TRACE] io.log2jv.Demo - Это TRACE — скорее всего не будет видно при уровне INFO
+2026-09-05 13:13:20.457 [DEBUG] io.log2jv.Demo - Это DEBUG — тоже отфильтруется на уровне INFO
+2026-09-05 13:13:20.556 [INFO] io.log2jv.Demo - Приложение Log2JV запущено на JDK 11.0000
+2026-09-05 13:13:20.557 [WARN] io.log2jv.Demo - Свободного места на диске меньше 10.0000%
+2026-09-05 13:13:20.557 [ERROR] io.log2jv.Demo - Не удалось выполнить деление
+java.lang.ArithmeticException: / by zero
+	at io.log2jv.Demo.main(Demo.java:19)
+
+2026-09-05 13:13:20.867 [INFO] io.log2jv.Demo - Массив: [0, 5, 2, 4, 6]; параметр: Name: 5
