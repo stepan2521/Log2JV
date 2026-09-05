@@ -164,15 +164,17 @@ Pattern tokens: `%d` / `%d{date-pattern}`, `%level`, `%logger`, `%thread`,
 Log2JV supports Java varargs (no Kotlin needed; Java 11 has varargs):
 
 ```java
-Logger log = LogManager.getLogger(MyClass.class);
-
-log.info("Application ${} started on JDK ${}", "Log2JV", 11);
-log.info("Array: ${}; parameter: ${}",
-        new int[]{0, 5, 2, 4, 6},
-        new Pair<>("Name", 5));
-log.info("Cost is $${} dollars", 5);   // -> "Cost is $5 dollars"
-log.info("$$ is a dollar literal");    // -> "$ is a dollar literal"
-log.fatal("Unrecoverable error in ${}", "payment-service");  // logs + crashes
+public class Demo {
+    public static final Logger log = LogManager.getLogger(MyClass.class);
+    
+    public static void main(String[] args) {
+        log.info("Application ${} started on JDK ${}","Log2JV",11);
+        log.info("Array: ${}; parameter: ${}", new int[]{0, 5, 2, 4, 6}, new Pair<>("Name",5));
+        log.info("Cost is $${} dollars",5);   // -> "Cost is $5 dollars"
+        log.info("$$ is a dollar literal");    // -> "$ is a dollar literal"
+        log.fatal("Unrecoverable error in ${}","payment-service");  // logs + crashes
+    }
+}
 ```
 
 - `${}` — placeholder for the next argument (any type). Arrays and `Pair`
