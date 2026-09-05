@@ -139,7 +139,7 @@ public class MyService {
 }
 ```
 
-## Configuration parameters
+## Configuration parameters 
 
 | Key                     | Default        | Description                                      |
 |-------------------------|----------------|--------------------------------------------------|
