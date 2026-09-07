@@ -12,8 +12,8 @@ This means:
 - The resulting `.jar` can be used in projects running on **Java 11 and any newer
   JDK** (17, 21, 25, etc.) — the JVM is backward-compatible with older bytecode.
 - You can build the library with any installed JDK (21, 25, …). The `--release`
-  flag makes the compiler check that you’re not using any API introduced after
-  Java 11, no matter which JDK you’re compiling with.
+  flag makes the compiler check that you're not using any API introduced after
+  Java 11, no matter which JDK you're compiling with.
 - The opposite is not true: a `.jar` built for Java 17+ will not run on JVM 11.
   The lower the target, the wider the audience that can use the library.
 
@@ -32,7 +32,7 @@ log2jv/
 │   ├── LogRecord.java            # immutable log event
 │   ├── Formatter.java            # formatter interface
 │   ├── PatternFormatter.java     # patterns like %d{...} %level %logger %msg %n %ex
-│   ├── Appender.java             # “where to write” interface
+│   ├── Appender.java             # "where to write" interface
 │   ├── ConsoleAppender.java
 │   ├── FileAppender.java         # file writing + size-based rotation
 │   ├── AsyncAppender.java        # decorator: asynchronous writing via a queue
@@ -87,7 +87,7 @@ build/libs/log2jv-0.6.2.jar
 
 ```kotlin
 dependencies {
-    implementation("io.github.stepanmail1999-ctrl:log2jv:0.6.2")
+    implementation("io.github.stepan2521:log2jv:0.6.2")
 }
 ```
 
@@ -95,7 +95,7 @@ dependencies {
 
 ```groovy
 dependencies {
-    implementation 'io.github.stepanmail1999-ctrl:log2jv:0.6.2'
+    implementation 'io.github.stepan2521:log2jv:0.6.2'
 }
 ```
 
@@ -103,14 +103,14 @@ dependencies {
 
 ```xml
 <dependency>
-    <groupId>io.github.stepanmail1999-ctrl</groupId>
+    <groupId>io.github.stepan2521</groupId>
     <artifactId>log2jv</artifactId>
     <version>0.6.2</version>
 </dependency>
 ```
 
 > If the artifact is not yet available on Maven Central, use a jar from
-> [GitHub Releases](https://github.com/stepanmail1999-ctrl/Log2JV/releases)
+> [GitHub Releases](https://github.com/stepan2521/Log2JV/releases)
 > or JitPack:
 >
 > ```kotlin
@@ -120,7 +120,7 @@ dependencies {
 > }
 >
 > dependencies {
->     implementation("com.github.stepanmail1999-ctrl:Log2JV:v0.6.2")
+>     implementation("com.github.stepan2521:Log2JV:v0.6.2")
 > }
 > ```
 
@@ -211,4 +211,4 @@ console.colors=false
 
 ## Changelog
 
-See [Releases](https://github.com/stepanmail1999-ctrl/Log2JV/releases).
+See [Releases](https://github.com/stepan2521/Log2JV/releases).
