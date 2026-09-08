@@ -72,7 +72,6 @@ You need Gradle installed (or use the included wrapper):
 ```bash
 ./gradlew build          # compile + tests + jar
 ./gradlew test           # tests only
-./gradlew printJarPath   # prints the path to the finished .jar
 ```
 
 The finished artifact appears in:
